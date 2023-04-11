@@ -1,18 +1,31 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/planet.png';
 
+const links = [
+  { path: '/', text: 'Rockets' },
+  { path: 'missions', text: 'Missions', id: 'border' },
+  { path: 'profile', text: 'Profile' },
+];
+
 const Navbar = () => (
-  <nav>
-    <div className="nav-center">
-      <NavLink to="/" className="logo">
-        <img src={logo} alt="logo" />
-      </NavLink>
-      <ul className="menu">
-        <li><NavLink className="nav-link active" to="/">Rockets</NavLink></li>
-        <li><NavLink className="nav-link" to="categories">Missions</NavLink></li>
-        <li><NavLink className="nav-link" to="categories">My Profile</NavLink></li>
-      </ul>
+  <nav className="navbar">
+    <div className="logo-container">
+      <img src={logo} alt="logo" />
+      <h1>Space Travelers Hub</h1>
     </div>
+    <ul>
+      {links.map((link) => (
+        <li key={link.text}>
+          <NavLink
+            to={link.path}
+            className={({ isActive }) => (isActive ? 'active' : 'normal')}
+            id={link.id}
+          >
+            {link.text}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
   </nav>
 );
 export default Navbar;

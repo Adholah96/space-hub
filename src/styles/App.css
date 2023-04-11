@@ -1,3 +1,49 @@
+*,
+html,
 body {
-  background: blue;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* ------------------------------------------------NAVBAR */
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  font-size: 20px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > ul a {
+  color: blue;
+  text-decoration: none;
+}
+
+nav > ul a.active {
+  text-decoration: underline;
+}
+
+#border {
+  border-right: 1px solid grey;
+  padding-right: 1rem;
 }
