@@ -1,6 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/planet.png';
 
+const links = [
+  { path: '/', text: 'Rockets' },
+  { path: 'missions', text: 'Missions', id: 'border' },
+  { path: 'profile', text: 'Profile' },
+];
+
 const Navbar = () => (
   <nav className="navbar">
     <div className="logo-container">
@@ -8,27 +14,17 @@ const Navbar = () => (
       <h1>Space Travelers Hub</h1>
     </div>
     <ul>
-      <li>
-        <NavLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          Rockets
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/Missions"
-          style={{ textDecoration: 'none', color: 'inherit' }}
-        >
-          Missions
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/Profile"
-          style={{ textDecoration: 'none', color: 'inherit' }}
-        >
-          Profile
-        </NavLink>
-      </li>
+      {links.map((link) => (
+        <li key={link.text}>
+          <NavLink
+            to={link.path}
+            className={({ isActive }) => (isActive ? 'active' : 'normal')}
+            id={link.id}
+          >
+            {link.text}
+          </NavLink>
+        </li>
+      ))}
     </ul>
   </nav>
 );
