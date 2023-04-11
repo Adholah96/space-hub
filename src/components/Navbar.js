@@ -2,17 +2,34 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/planet.png';
 
 const Navbar = () => (
-  <nav>
-    <div className="nav-center">
-      <NavLink to="/" className="logo">
-        <img src={logo} alt="logo" />
-      </NavLink>
-      <ul className="menu">
-        <li><NavLink className="nav-link active" to="/">Rockets</NavLink></li>
-        <li><NavLink className="nav-link" to="categories">Missions</NavLink></li>
-        <li><NavLink className="nav-link" to="categories">My Profile</NavLink></li>
-      </ul>
+  <nav className="navbar">
+    <div className="logo-container">
+      <img src={logo} alt="logo" />
+      <h1>Space Travelers Hub</h1>
     </div>
+    <ul>
+      <li>
+        <NavLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          Rockets
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/Missions"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          Missions
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/Profile"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          Profile
+        </NavLink>
+      </li>
+    </ul>
   </nav>
 );
 export default Navbar;
