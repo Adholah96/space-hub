@@ -77,8 +77,14 @@ tr:nth-child(even) {
   font-size: 0.4rem;
 }
 
-.missionBtn {
+.missionBtn,
+.activeMission {
   padding: 4px;
   border: 2px solid #e8e8e8;
   text-transform: capitalize;
+}
+
+.activeMission {
+  color: red;
+  border: 1px solid red;
 }
