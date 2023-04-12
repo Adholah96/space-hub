@@ -2,22 +2,31 @@
   padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .rocket {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  gap: 2rem;
 }
 
-.rocket > img {
-  width: 400px;
+.image-container {
+  width: 280px;
   height: 130px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .detail-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: start;
   gap: 1rem;
 }
