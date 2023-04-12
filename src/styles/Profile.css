@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+}
+
+.missions,
+.rockets {
+    width: 50%;
+}
+
+.missions h3,
+.rockets h3 {
+    text-transform: capitalize;
+}
+
+.missions ul,
+.rockets ul {
+    display: block;
+    border: 2px solid #e8e8e8;
+    width: 100%;
+}
+
+.missions ul li,
+.rockets ul li {
+    border-bottom: 2px solid #e8e8e8;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.7rem;
+    width: 100%;
+}
