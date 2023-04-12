@@ -1,21 +1,16 @@
 import React from 'react';
-import placeholder from '../assets/placeholder.jpeg';
+import PropTypes from 'prop-types';
 import '../styles/Rockets.css';
 
-const RocketItem = () => (
+const RocketItem = ({ name, description, img }) => (
   <>
     <article className="rocket">
-      <img src={placeholder} alt="placeholder" />
-      ;
+      <div className="image-container">
+        <img src={img} alt="placeholder" />
+      </div>
       <div className="detail-container">
-        <h2>Falcon 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel sem et
-          lectus convallis tristique sit amet et massa. Vestibulum ante ipsum
-          primis in faucibus orci luctus et ultrices posuere cubilia curae;
-          Proin condimentum urna nec massa scelerisque, eu facilisis purus
-          aliquam.
-        </p>
+        <h2>{name}</h2>
+        <p>{description}</p>
         <button type="button" id="reserve-btn">
           Reserve Rocket
         </button>
@@ -23,5 +18,11 @@ const RocketItem = () => (
     </article>
   </>
 );
+
+RocketItem.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+}.isRequired;
 
 export default RocketItem;
