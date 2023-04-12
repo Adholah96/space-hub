@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission } from '../redux/missions/missionsSlice';
+import { joinMission, leaveMission } from '../redux/missions/missionsSlice';
 import '../styles/Missions.css';
 
 function MissionItem({ mission }) {
   const dispatch = useDispatch();
   const handleJoinMission = () => {
     dispatch(joinMission(mission.mission_id));
+  };
+  const handleLeaveMission = () => {
+    dispatch(leaveMission(mission.mission_id));
   };
   return (
     <tr>
@@ -21,7 +24,15 @@ function MissionItem({ mission }) {
           {mission.reserved === true ? 'active member' : 'not a member' }
         </button>
       </td>
-      <td className="missionCell"><button onClick={handleJoinMission} className="missionBtn" type="button">join mission</button></td>
+      <td className="missionCell">
+        <button
+          onClick={mission.reserved === false ? handleJoinMission : handleLeaveMission}
+          className={mission.reserved === true ? 'activeMission' : 'missionBtn'}
+          type="button"
+        >
+          {mission.reserved === true ? 'leave mission' : 'join mission' }
+        </button>
+      </td>
     </tr>
   );
 }
