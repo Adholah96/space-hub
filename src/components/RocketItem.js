@@ -4,11 +4,11 @@ import '../styles/Rockets.css';
 
 const RocketItem = () => (
   <>
-    <div className="rocket">
+    <article className="rocket">
       <img src={placeholder} alt="placeholder" />
       ;
       <div className="detail-container">
-        <h1>Falcon 1</h1>
+        <h2>Falcon 1</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel sem et
           lectus convallis tristique sit amet et massa. Vestibulum ante ipsum
@@ -20,7 +20,7 @@ const RocketItem = () => (
           Reserve Rocket
         </button>
       </div>
-    </div>
+    </article>
   </>
 );
 
