@@ -15,7 +15,7 @@ function Rockets() {
         dispatch(getRockets());
       }
     }
-  }, [dispatch]);
+  }, [dispatch, rocketsData.length]);
 
   return (
     <div className="rocket-holder">
