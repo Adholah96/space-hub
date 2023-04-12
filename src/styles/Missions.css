@@ -1,3 +1,4 @@
+
 main {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -58,7 +59,8 @@ tr:nth-child(even) {
   background-color: #e8e8e8;
 }
 
-.memberBtn {
+.memberBtn,
+.activeBtn {
   text-transform: uppercase;
   font-size: 0.5rem;
   border-radius: 2px;
@@ -68,6 +70,11 @@ tr:nth-child(even) {
   width: 95%;
   background: #666;
   color: #fff;
+}
+
+.activeBtn {
+  background: blue;
+  font-size: 0.4rem;
 }
 
 .missionBtn {
