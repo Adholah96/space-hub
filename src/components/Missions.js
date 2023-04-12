@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import '../styles/Missions.css';
+import { getMissions } from 'redux/missions/missionsSlice';
+import MissionItem from './MissionItem';
 
 function Missions() {
+  const dispatch = useDispatch();
+  const { missions, isLoading, error } = useSelector((store) => store.missions);
+  useEffect(() => {
+    dispatch(getMissions());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return (
+      <div className="loading">
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div className="error">
+        <h1>{error}</h1>
+      </div>
+    );
+  }
   return (
     <main>
       <table>
@@ -11,63 +34,7 @@ function Missions() {
           <th id="headerThree">status</th>
           <th id="headerFour"><span id="empty">empty</span></th>
         </tr>
-        <tr>
-          <td className="missionTitle">Thaicom</td>
-          <td>
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-          </td>
-          <td className="memberCell"><button className="memberBtn" type="button">not a member</button></td>
-          <td className="missionCell"><button className="missionBtn" type="button">join mission</button></td>
-        </tr>
-        <tr>
-          <td className="missionTitle">Thaicom</td>
-          <td>
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-          </td>
-          <td className="memberCell"><button style={{ background: 'blue', fontSize: '0.4rem' }} className="memberBtn" type="button">active member</button></td>
-          <td className="missionCell"><button style={{ color: 'red', borderColor: 'red', background: 'transparent' }} className="missionBtn" type="button">leave mission</button></td>
-        </tr>
-        <tr>
-          <td className="missionTitle">Thaicom</td>
-          <td>
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddddddddddd
-          </td>
-          <td className="memberCell"><button className="memberBtn" type="button">not a member</button></td>
-          <td className="missionCell"><button className="missionBtn" type="button">join mission</button></td>
-        </tr>
+        {missions.map((item) => <MissionItem key={item.mission_id} mission={item} />)}
       </table>
     </main>
   );
