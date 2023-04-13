@@ -14,9 +14,9 @@ const RocketItem = ({
 
   return (
     <>
-      <article className="rocket">
+      <article className="rocket" id={id}>
         <div className="image-container">
-          <img src={img} alt="placeholder" />
+          <img src={img} alt={`placeholder-${name}`} />
         </div>
         <div className="detail-container">
           <h2>{name}</h2>
