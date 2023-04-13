@@ -17,20 +17,17 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Visit my website](https://kevin-mena.github.io/Personal-Portfolio-Website/)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 [Space-hub] <a name="about-project"></a>
@@ -44,6 +41,12 @@
   <summary>React</summary>
   <ul>
     <li><a href="https://react.dev/">React</a></li>
+  </ul>
+</details>
+
+  <summary>JavaScript</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -68,9 +71,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## 🚀 Live Demo <a name="live-demo" ></a>
+## 🚀 Live Demo <a name="live-demo" ></a>
 
-- [Coming Soon](#) -->
+- [Coming Soon](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
