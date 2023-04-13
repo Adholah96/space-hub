@@ -35,11 +35,30 @@
   font-size: 15px;
 }
 
-#reserve-btn {
+.reservebtn {
   padding: 5px 10px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 3px;
   font-size: 10px;
+}
+
+.cancelbtn {
+  padding: 5px 10px;
+  background: transparent;
+  color: #adb2b6;
+  border: 2px solid #adb2b6;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.reservation {
+  background-color: #18a2b8;
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  margin: 0.5rem;
 }
