@@ -168,8 +168,6 @@ Thanks to everyone whose idea and codebase was used in this project. Moreso to o
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
