@@ -87,4 +87,5 @@ tr:nth-child(even) {
 .activeMission {
   color: red;
   border: 1px solid red;
+  background: #fff;
 }
