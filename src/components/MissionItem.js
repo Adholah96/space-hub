@@ -26,7 +26,8 @@ function MissionItem({ mission }) {
       </td>
       <td className="missionCell">
         <button
-          onClick={mission.reserved === false ? handleJoinMission : handleLeaveMission}
+          onClick={mission.reserved && mission.reserved === true ? handleLeaveMission
+            : handleJoinMission}
           className={mission.reserved === true ? 'activeMission' : 'missionBtn'}
           type="button"
         >
