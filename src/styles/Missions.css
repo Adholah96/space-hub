@@ -1,0 +1,91 @@
+
+main {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  padding: 8px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+#empty {
+  visibility: hidden;
+}
+
+td {
+  padding: 8px;
+}
+
+.missionTitle {
+  display: flex;
+  align-items: flex-start;
+  border: none;
+  text-transform: capitalize;
+}
+
+#headerOne {
+  width: 150px;
+}
+
+#headerThree {
+  width: 70px;
+}
+
+#headerFour {
+  width: 125px;
+}
+
+.memberCell,
+.missionCell {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+.memberBtn,
+.activeBtn {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 2px 0;
+  width: 95%;
+  background: #666;
+  color: #fff;
+}
+
+.activeBtn {
+  background: blue;
+  font-size: 0.4rem;
+}
+
+.missionBtn,
+.activeMission {
+  padding: 4px;
+  border: 2px solid #e8e8e8;
+  text-transform: capitalize;
+}
+
+.activeMission {
+  color: red;
+  border: 1px solid red;
+  background: #fff;
+}
