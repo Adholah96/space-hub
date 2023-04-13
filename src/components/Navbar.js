@@ -8,24 +8,27 @@ const links = [
 ];
 
 const Navbar = () => (
-  <nav className="navbar">
-    <div className="logo-container">
-      <img src={logo} alt="logo" />
-      <h1>Space Travelers Hub</h1>
-    </div>
-    <ul>
-      {links.map((link) => (
-        <li key={link.text}>
-          <NavLink
-            to={link.path}
-            className={({ isActive }) => (isActive ? 'active' : 'normal')}
-            id={link.id}
-          >
-            {link.text}
-          </NavLink>
-        </li>
-      ))}
-    </ul>
-  </nav>
+  <>
+    <nav className="navbar">
+      <div className="logo-container">
+        <img src={logo} alt="logo" />
+        <h1>Space Travelers Hub</h1>
+      </div>
+      <ul>
+        {links.map((link) => (
+          <li key={link.text}>
+            <NavLink
+              to={link.path}
+              className={({ isActive }) => (isActive ? 'active' : 'normal')}
+              id={link.id}
+            >
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <hr />
+  </>
 );
 export default Navbar;
