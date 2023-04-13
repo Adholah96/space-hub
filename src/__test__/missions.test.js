@@ -8,7 +8,7 @@ test('renders loading message correctly', () => {
   render(
     <Provider store={store}>
       <Missions />
-    </Provider>
+    </Provider>,
   );
 
   const loadingElement = screen.getByText('Loading...');
@@ -16,11 +16,10 @@ test('renders loading message correctly', () => {
 });
 
 test('renders error message correctly', () => {
-  const errorMessage = 'Failed to load missions';
   render(
     <Provider store={store}>
       <Missions />
-    </Provider>
+    </Provider>,
   );
 });
 
@@ -43,7 +42,7 @@ test('renders mission items correctly when data is loaded', async () => {
   render(
     <Provider store={store}>
       <Missions />
-    </Provider>
+    </Provider>,
   );
 
   store.dispatch({

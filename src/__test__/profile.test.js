@@ -20,12 +20,10 @@ describe('Profile', () => {
       { id: '2', name: 'Rocket 2', reserved: false },
     ];
     // Set the mocked useSelector hook to return fake state
-    useSelector.mockImplementation((selectorFn) =>
-      selectorFn({
-        missions: { missions },
-        rockets,
-      })
-    );
+    useSelector.mockImplementation((selectorFn) => selectorFn({
+      missions: { missions },
+      rockets,
+    }));
 
     render(<Profile />);
 

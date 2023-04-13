@@ -48,14 +48,14 @@ describe('Rockets', () => {
     render(<Rockets />);
 
     expect(
-      screen.getByRole('heading', { name: /falcon 9/i })
+      screen.getByRole('heading', { name: /falcon 9/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: /falcon heavy/i })
+      screen.getByRole('heading', { name: /falcon heavy/i }),
     ).toBeInTheDocument();
     expect(screen.getByText('Description for Falcon 9')).toBeInTheDocument();
     expect(
-      screen.getByText('Description for Falcon Heavy')
+      screen.getByText('Description for Falcon Heavy'),
     ).toBeInTheDocument();
     expect(screen.getByText('Reserve Rocket')).toBeInTheDocument();
     expect(screen.getByText('Cancel Reservation')).toBeInTheDocument();
