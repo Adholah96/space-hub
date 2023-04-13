@@ -24,7 +24,7 @@ function Profile() {
         <ul>
           { filteredRockets.map((rocket) => {
             const rocketId = rocket.id;
-            return <li key={rocketId}>{rocket.description}</li>;
+            return <li key={rocketId}>{rocket.name}</li>;
           }) }
         </ul>
       </div>
