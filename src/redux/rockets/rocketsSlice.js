@@ -35,7 +35,7 @@ const rocketsSlice = createSlice({
       Object.entries(action.payload).forEach((item) => {
         newState.push({
           id: item[1].id,
-          name: item[1].rocket_name,
+          name: item[1].name,
           description: item[1].description,
           flickr_image: item[1].flickr_images[0],
           reserved: false,
