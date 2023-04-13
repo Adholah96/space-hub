@@ -47,6 +47,18 @@
   </ul>
 </details>
 
+  <summary>HTML</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a></li>
+  </ul>
+</details>
+
+  <summary>CSS</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a></li>
+  </ul>
+</details>
+
 ### Key Features <a name="key-features"></a>
 
 - **[React]**
@@ -56,9 +68,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo" ></a>
+<!-- ## 🚀 Live Demo <a name="live-demo" ></a>
 
-- [Coming Soon](#)
+- [Coming Soon](#) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,14 +113,13 @@ To run the project, execute the following command:
 npm start
 ```
 
-<!-- ### Run tests
+### Run tests
 
 - On the terminal
 
 ```sh
-npm install --save-dev jest-environment-jsdom
 npm test
-``` -->
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,16 +165,10 @@ Thanks to everyone whose idea and codebase was used in this project. Moreso to o
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-N/A
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
