@@ -122,9 +122,9 @@ npm test
 
 👤 **Ernest Musong**
 
-- GitHub: [@githubhandle](#)
-- Twitter: [@twitterhandle](#)
-- LinkedIn: [LinkedIn](#)
+- GitHub: [@githubhandle](https://github.com/ernestmusong)
+- Twitter: [@twitterhandle](https://twitter.com/MusongAkeh)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/musongernestakeh/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
