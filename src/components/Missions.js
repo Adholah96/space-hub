@@ -28,13 +28,19 @@ function Missions() {
   return (
     <main>
       <table>
-        <tr>
-          <th id="headerOne">mission</th>
-          <th>discription</th>
-          <th id="headerThree">status</th>
-          <th id="headerFour"><span id="empty">empty</span></th>
-        </tr>
-        {missions.map((item) => <MissionItem key={item.mission_id} mission={item} />)}
+        <tbody>
+          <tr>
+            <th id="headerOne">mission</th>
+            <th>discription</th>
+            <th id="headerThree">status</th>
+            <th id="headerFour">
+              <span id="empty">empty</span>
+            </th>
+          </tr>
+        </tbody>
+        {missions.map((item) => (
+          <MissionItem key={item.mission_id} mission={item} />
+        ))}
       </table>
     </main>
   );
